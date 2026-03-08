@@ -1,5 +1,32 @@
-.env
+# --- Backend (Python/Flask) ---
+# Игнорируем виртуальное окружение
 .venv/
-.idea/
+venv/
+env/
+
+# Удаляем временные файлы Python
 __pycache__/
 *.pyc
+
+# Скрываем секретные ключи и настройки базы данных
+.env
+
+# --- Frontend (Vue.js / Node.js) ---
+# Игнорируем папку с библиотеками (она весит сотни мегабайт!)
+node_modules/
+
+# Папка с готовой сборкой проекта (результат npm run build)
+dist/
+
+# Логи ошибок
+*.log
+npm-debug.log*
+
+# --- IDE и Система ---
+# Настройки PyCharm и WebStorm
+.idea/
+.vscode/
+
+# Системные файлы Windows
+Thumbs.db
+Desktop.ini
